@@ -1,0 +1,11 @@
+1.Install awscli, Terraform, Ansible, Git,Docker etc
+2.Goto .ssh  >ssh-keygen  >chmod 600 id-rsa.pub 
+3.run this command  >eval `ssh-agent -s`
+4.run  >make infrastructure
+#this will create 4 instance and complete infra for okd . check the errors and resolve it (give proper role to instance)
+5.run  >make openshift
+#This wil runscript on clusters to launch OKD
+
+#Note
+1.change main.tf and variables.tf (change the instance size and give path of key)
+2.This repo create access and secret key so be careful.
